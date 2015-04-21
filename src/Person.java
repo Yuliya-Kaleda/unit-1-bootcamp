@@ -1,4 +1,5 @@
 public class Person {
+
   private String name;
   private String phoneNumber;
   private String city;

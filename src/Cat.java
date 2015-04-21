@@ -46,4 +46,17 @@ public class Cat {
   public Person getOwner() {
     return owner;
   }
+
+    @Override
+    public String toString(){
+        if (this.name == null){
+            return super.toString();
+        }
+        else {
+            return String.format("Cat(name=%s, owner=%s, favoriteFood=%s)",
+                                 this.name,
+                                 this.owner,
+                                 this.favoriteFood);
+        }
+    }
 }
